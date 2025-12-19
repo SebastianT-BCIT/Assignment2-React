@@ -1,12 +1,7 @@
-
-import {Routes, Route, NavLink} from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import { WeatherProvider } from "./components/WeatherProvider";
-import { CityInputs } from "./components/CityInputs";
-import { WeatherCard } from "./components/WeatherCard";
-import { WeatherContext } from "./components/WeatherContext";
 import { AboutPage } from "./pages/AboutPage";
-import{HomePage} from "./pages/HomePage";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
   return (
@@ -19,15 +14,11 @@ function App() {
           <NavLink to="/about">About</NavLink>
         </nav>
       </header>
-      
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/about" element={<AboutPage/>}/>
-          
-        </Routes>
-     
-        
-      
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </div>
   );
 }
