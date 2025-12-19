@@ -1,5 +1,5 @@
 
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route, NavLink} from "react-router-dom";
 import "./App.css";
 import { WeatherProvider } from "./components/WeatherProvider";
 import { CityInputs } from "./components/CityInputs";
@@ -14,9 +14,9 @@ function App() {
       <header className="app-header">
         <h1>⛅ Weather comparison</h1>
         <p>Compare weather between your origin city and current location</p>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+        <nav className="nav-bar">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
         </nav>
       </header>
       
